@@ -12,9 +12,9 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  test:
+  super_1:
     build:
-      context: ./test
+      context: ./super_1
     container_name: sleep_tracker_backend
     environment:
       - DB_HOST=db
